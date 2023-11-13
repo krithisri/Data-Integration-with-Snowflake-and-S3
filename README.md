@@ -4,7 +4,7 @@
 This project unfolds a streamlined data integration pipeline that harmonizes the capabilities of Snowflake and AWS S3. From the generation of synthetic data with Mockaroo to the orchestrated transfer to an S3 bucket, the project prioritizes efficiency and scalability. Embracing Snowflake, it lays a structured foundation enriched by real-time streams and automated tasks, ensuring precise and timely data updates. Positioned as a modern, cloud-native solution, this project caters to businesses seeking reliable and scalable data management practices, with the flexibility to embrace future enhancements.
 
 ## Objective
-The primary objective of this project is to showcase a robust and contemporary data integration pipeline. Through the generation of synthetic data, storage in an S3 bucket, and the utilization of Snowflake's capabilities, the project aims to exemplify efficient data movement and transformation processes. By doing so, it provides valuable insights into modern data engineering practices, emphasizing their relevance in addressing the evolving demands of data management.
+The primary objective of this project is to showcase a robust and contemporary data integration pipeline. Through the generation of data, processing using puthon and storage in an S3 bucket, and the utilization of Snowflake's capabilities, the project aims to exemplify efficient data movement and transformation processes. By doing so, it provides valuable insights into modern data engineering practices, emphasizing their relevance in addressing the evolving demands of data management.
 
 ## Why This Matters
 
@@ -21,14 +21,7 @@ Before running the project, ensure the following prerequisites are met:
 
 - AWS account with S3 bucket access
 - Snowflake account with necessary privileges
-- Any Editor to generate and load the final code using python into an s3 bucket
-
-## Project Structure
-The project is organized into the following directories:
-
-- **snowflake_setup:** Includes Snowflake worksheet scripts for database, schema, table creation, and data integration.
-- **dynamic_view:** Houses the JavaScript procedure for creating a dynamic view.
-- **documentation:** Holds project documentation files, including README.md.
+- Any Editor (Preferably Python editor) to generate and load the data into an s3 bucket
 
 ## Data Generation and Storage
 For this project, data is generated using [Mockaroo](https://www.mockaroo.com/). Later python is used to store and process the data into an AWS S3 bucket named 'snowflakebucketfordata.'
@@ -63,17 +56,6 @@ Snowpipe could be utilized for automatic data ingestion if not for the free vers
 
 ## Dynamic View on Data
 A JavaScript procedure, `create_view`, dynamically creates a view on JSON data. An automated task schedules the view creation.
-
-## Concepts Implemented
-This project integrates various key concepts in data engineering and cloud-native solutions. The following concepts are implemented:
-
-- **Efficient Data Movement:** Demonstrates streamlined processes for moving data efficiently.
-  
-- **Scalable Architecture:** Implements a scalable architecture to accommodate growing data volumes.
-
-- **Real-time Responsiveness:** Utilizes real-time streams and automated tasks for responsive data management.
-
-- **Structured Data Foundation:** Establishes a structured foundation using Snowflake for organized and efficient data handling.
 
 ## Conclusion
 The project successfully demonstrates a robust data integration pipeline with Snowflake and S3. Future work may include further analysis and machine learning model integration.
