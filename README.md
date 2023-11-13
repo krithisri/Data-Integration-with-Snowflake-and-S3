@@ -21,18 +21,17 @@ Before running the project, ensure the following prerequisites are met:
 
 - AWS account with S3 bucket access
 - Snowflake account with necessary privileges
-- Mockaroo account for synthetic data generation
+- Any Editor to generate and load the final code using python into an s3 bucket
 
 ## Project Structure
 The project is organized into the following directories:
 
-- **data_generation:** Contains scripts and files related to synthetic data generation.
 - **snowflake_setup:** Includes Snowflake worksheet scripts for database, schema, table creation, and data integration.
 - **dynamic_view:** Houses the JavaScript procedure for creating a dynamic view.
 - **documentation:** Holds project documentation files, including README.md.
 
 ## Data Generation and Storage
-Synthetic data is generated using [Mockaroo](https://www.mockaroo.com/) and stored in an AWS S3 bucket named 'snowflakebucketfordata.'
+For this project, data is generated using [Mockaroo](https://www.mockaroo.com/). Later python is used to store and process the data into an AWS S3 bucket named 'snowflakebucketfordata.'
 
 ## Snowflake Setup
 
@@ -57,13 +56,13 @@ Synthetic data is generated using [Mockaroo](https://www.mockaroo.com/) and stor
 
 ### Worksheets 4
 **Worksheet 4: Task creation for automated data migration.**
-- `CREATE OR REPLACE TASK` named MIGRATE_SILVER automates merging data from the stream into the Silver table.
+- `CREATE OR REPLACE TASK` named MIGRATE_TO_SILVER automates merging data from the stream into the Silver table.
 
 ### Snowpipe Integration (Optional)
 Snowpipe could be utilized for automatic data ingestion if not for the free version.
 
 ## Dynamic View on Data
-A JavaScript procedure, `create_view_over_json3`, dynamically creates a view on JSON data. An automated task schedules the view creation.
+A JavaScript procedure, `create_view`, dynamically creates a view on JSON data. An automated task schedules the view creation.
 
 ## Concepts Implemented
 This project integrates various key concepts in data engineering and cloud-native solutions. The following concepts are implemented:
