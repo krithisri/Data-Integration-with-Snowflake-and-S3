@@ -20,14 +20,14 @@ URL = 's3://snowflakebucketfordata'
 STORAGE_INTEGRATION = aws_integration;
 
 -- Copy data from the S3 stage to the BRONZE table.
-COPY INTO SNOWFLAKE_BRONZE.SAS.BRONZE
+COPY INTO SNOWFLAKE_BRONZE.S3.BRONZE
 FROM @s3_stage
 FILES=('MOCK_DATA.json')
 FILE_FORMAT=(TYPE = 'JSON', STRIP_OUTER_ARRAY = true)
 MATCH_BY_COLUMN_NAME = CASE_INSENSITIVE;
 
 -- Select all records from the BRONZE table.
-SELECT * FROM SNOWFLAKE_BRONZE.SAS.BRONZE;
+SELECT * FROM SNOWFLAKE_BRONZE.S3.BRONZE;
 -- Select all records from the SAMPLE_STREAM stream.
 SELECT * FROM SAMPLE_STREAM;
 -- Select all records from the SILVER table.
