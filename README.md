@@ -1,5 +1,5 @@
 # Data Integration with Snowflake and S3
-![Overall Architecture](./Project%20Diagrams/Overall%20Architecture/Overall%20Arch.png)
+![Overall Architecture](./Project%20Diagrams/Project%20Architecture.png)
 # Project Overview
 This project unfolds a streamlined data integration pipeline that harmonizes the capabilities of Snowflake and AWS S3. From the generation of synthetic data with Mockaroo to the orchestrated transfer to an S3 bucket, the project prioritizes efficiency and scalability. Embracing Snowflake, it lays a structured foundation enriched by real-time streams and automated tasks, ensuring precise and timely data updates. Positioned as a modern, cloud-native solution, this project caters to businesses seeking reliable and scalable data management practices, with the flexibility to embrace future enhancements.
 
