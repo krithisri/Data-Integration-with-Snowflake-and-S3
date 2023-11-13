@@ -50,7 +50,7 @@ Synthetic data is generated using [Mockaroo](https://www.mockaroo.com/) and stor
 - `COPY INTO` command transfers data from S3 to the Bronze table.
 
 ### Worksheets 3
-![Snowflake Data Pipeline](./Project%20Diagrams/Snowflake%20Data%20Pipeline/Inside_snowflake.png)
+![Snowflake Data Pipeline](./Project%20Diagrams/Snowflake%20Data%20Pipeline/Inside%20snowflake.png)
 
 **Worksheet 3: Stream creation.**
 - `CREATE STREAM` sets up a stream named SAMPLE_STREAM on the Bronze table for real-time change tracking.
