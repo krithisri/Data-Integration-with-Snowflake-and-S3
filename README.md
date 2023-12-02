@@ -35,7 +35,7 @@ For this project, data is generated using [Mockaroo](https://www.mockaroo.com/).
 
 ### Worksheets 2
 **Worksheet 2: S3 to Snowflake Data Integration.**
-![S3 to Snowflake Integration](./Project%20Diagrams/S3%20to%20Snowflake%20Integration/S3%20to%20Snowflake%20Integration.png)
+![S3 to Snowflake Integration](./Project%20Diagrams/S3%20to%20Snowflake%20Integration.png)
 
 - `CREATE STORAGE INTEGRATION` links Snowflake to AWS S3.
 - `CREATE STAGE` establishes a connection to the S3 stage.
